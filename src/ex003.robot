@@ -1,7 +1,7 @@
 # ex002 + Usando XPath 
 # //tag[indentificador="valor"]
 *** Settings ***
-Library  SeleniumLibrary
+Library    SeleniumLibrary
 
 *** Variables ***
 ${input_name}            //input[@id="name"]

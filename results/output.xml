@@ -1,90 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230707 18:01:53.582" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230707 19:12:22.508" rpa="false" schemaversion="4">
 <suite id="s1" name="Learning-Robotframework" source="C:\Users\ryanb\dev\learning-robotframework">
 <suite id="s1-s1" name="Src" source="C:\Users\ryanb\dev\learning-robotframework\src">
-<suite id="s1-s1-s1" name="Ex003" source="C:\Users\ryanb\dev\learning-robotframework\src\ex003.robot">
-<test id="s1-s1-s1-t1" name="Cenario 1: Preencher formulario" line="29">
-<kw name="Abrir navegador e acessar site">
+<suite id="s1-s1-s1" name="Ex004" source="C:\Users\ryanb\dev\learning-robotframework\src\ex004.robot">
+<test id="s1-s1-s1-t1" name="Given" line="34">
+<kw name="acesse o site do youtube">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>https://www.youtube.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230707 18:01:54.053" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
-<status status="PASS" starttime="20230707 18:01:54.053" endtime="20230707 18:01:58.062"/>
+<msg timestamp="20230707 19:12:22.996" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20230707 19:12:22.995" endtime="20230707 19:12:32.205"/>
 </kw>
-<status status="PASS" starttime="20230707 18:01:54.051" endtime="20230707 18:01:58.063"/>
+<status status="PASS" starttime="20230707 19:12:22.994" endtime="20230707 19:12:32.205"/>
 </kw>
-<kw name="Preencher campos">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_name}</arg>
-<arg>Ryan Gabriel</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:58.068" level="INFO">Typing text 'Ryan Gabriel' into text field '//input[@id="name"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:58.066" endtime="20230707 18:01:58.315"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_phone}</arg>
-<arg>47991579658</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:58.317" level="INFO">Typing text '47991579658' into text field '//input[@id="phone"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:58.316" endtime="20230707 18:01:58.508"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_email}</arg>
-<arg>ryan.exemplo@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:58.511" level="INFO">Typing text 'ryan.exemplo@gmail.com' into text field '//input[@id="email"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:58.509" endtime="20230707 18:01:58.716"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${input_password}</arg>
-<arg>senha12345</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:58.717" level="INFO">Typing text 'senha12345' into text field '//input[@id="password"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:58.716" endtime="20230707 18:01:58.949"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${textarea_address}</arg>
-<arg>Rua dos bobo numero zero</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:58.951" level="INFO">Typing text 'Rua dos bobo numero zero' into text field '//textarea[@id="address"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:58.950" endtime="20230707 18:01:59.142"/>
-</kw>
-<status status="PASS" starttime="20230707 18:01:58.064" endtime="20230707 18:01:59.144"/>
-</kw>
-<kw name="Clicar no Botão">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${input_name}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230707 18:01:59.148" level="INFO">Clicking button '//input[@id="name"]'.</msg>
-<status status="PASS" starttime="20230707 18:01:59.146" endtime="20230707 18:01:59.253"/>
-</kw>
-<status status="PASS" starttime="20230707 18:01:59.145" endtime="20230707 18:01:59.254"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230707 18:01:59.258" endtime="20230707 18:02:01.494"/>
-</kw>
-<status status="PASS" starttime="20230707 18:01:54.049" endtime="20230707 18:02:01.498"/>
+<status status="PASS" starttime="20230707 19:12:22.990" endtime="20230707 19:12:32.207"/>
 </test>
-<status status="PASS" starttime="20230707 18:01:53.656" endtime="20230707 18:02:01.515"/>
+<test id="s1-s1-s1-t2" name="When" line="35">
+<kw name="eu digito o nome da musica">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_pesquisa}</arg>
+<arg>${nome_musica}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 19:12:32.220" level="INFO">Typing text 'KILLSTATION - EXTINCTION' into text field '//input[@id="search"]'.</msg>
+<status status="PASS" starttime="20230707 19:12:32.217" endtime="20230707 19:12:34.496"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:32.216" endtime="20230707 19:12:34.496"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:32.214" endtime="20230707 19:12:34.501"/>
+</test>
+<test id="s1-s1-s1-t3" name="And" line="36">
+<kw name="clicar no botão de busca">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230707 19:12:34.550" level="INFO">Clicking button '//button[@id="search-icon-legacy"]'.</msg>
+<status status="PASS" starttime="20230707 19:12:34.548" endtime="20230707 19:12:34.878"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:34.547" endtime="20230707 19:12:34.878"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:34.545" endtime="20230707 19:12:34.878"/>
+</test>
+<test id="s1-s1-s1-t4" name="And" line="37">
+<kw name="clica no primeiro video">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${yt_video}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 19:12:34.893" endtime="20230707 19:12:36.246"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${yt_video}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230707 19:12:36.248" level="INFO">Clicking element '(//yt-formatted-string[@class="style-scope ytd-video-renderer"])[1]'.</msg>
+<status status="PASS" starttime="20230707 19:12:36.247" endtime="20230707 19:12:36.919"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:34.892" endtime="20230707 19:12:36.919"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:34.887" endtime="20230707 19:12:36.923"/>
+</test>
+<test id="s1-s1-s1-t5" name="Then" line="38">
+<kw name="video é executado">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${button_share}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230707 19:12:36.937" endtime="20230707 19:12:38.967"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${button_share}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230707 19:12:39.557" level="INFO">Element '(//button[@aria-label="Compartilhar"])[2]' is displayed.</msg>
+<status status="PASS" starttime="20230707 19:12:38.968" endtime="20230707 19:12:39.562"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:36.936" endtime="20230707 19:12:39.563"/>
+</kw>
+<status status="PASS" starttime="20230707 19:12:36.934" endtime="20230707 19:12:39.565"/>
+</test>
+<status status="PASS" starttime="20230707 19:12:22.579" endtime="20230707 19:12:39.580"/>
 </suite>
-<status status="PASS" starttime="20230707 18:01:53.649" endtime="20230707 18:02:01.522"/>
+<status status="PASS" starttime="20230707 19:12:22.569" endtime="20230707 19:12:39.588"/>
 </suite>
-<status status="PASS" starttime="20230707 18:01:53.592" endtime="20230707 18:02:01.531"/>
+<status status="PASS" starttime="20230707 19:12:22.517" endtime="20230707 19:12:39.598"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Learning-Robotframework">Learning-Robotframework</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Src">Learning-Robotframework.Src</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Ex003">Learning-Robotframework.Src.Ex003</stat>
+<stat pass="5" fail="0" skip="0" id="s1" name="Learning-Robotframework">Learning-Robotframework</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Src">Learning-Robotframework.Src</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1-s1" name="Ex004">Learning-Robotframework.Src.Ex004</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230707 19:12:34.881" level="WARN">Multiple tests with name 'And' executed in suite 'Learning-Robotframework.Src.Ex004'.</msg>
 </errors>
 </robot>
