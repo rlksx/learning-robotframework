@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230707 16:17:54.398" rpa="false" schemaversion="4">
+<suite id="s1" name="Learning-Robotframework" source="C:\Users\ryanb\dev\learning-robotframework">
+<suite id="s1-s1" name="Src" source="C:\Users\ryanb\dev\learning-robotframework\src">
+<suite id="s1-s1-s1" name="Ex001" source="C:\Users\ryanb\dev\learning-robotframework\src\ex001.robot">
+<test id="s1-s1-s1-t1" name="Cenario 1: Acessando o site Robot" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://robotframework.org/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 16:17:54.764" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<status status="PASS" starttime="20230707 16:17:54.762" endtime="20230707 16:18:00.111"/>
+</kw>
+<status status="PASS" starttime="20230707 16:17:54.760" endtime="20230707 16:18:00.113"/>
+</test>
+<status status="PASS" starttime="20230707 16:17:54.453" endtime="20230707 16:18:00.117"/>
+</suite>
+<status status="PASS" starttime="20230707 16:17:54.446" endtime="20230707 16:18:00.122"/>
+</suite>
+<status status="PASS" starttime="20230707 16:17:54.403" endtime="20230707 16:18:00.128"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Learning-Robotframework">Learning-Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Src">Learning-Robotframework.Src</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Ex001">Learning-Robotframework.Src.Ex001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
