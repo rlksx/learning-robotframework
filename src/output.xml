@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230707 16:55:18.039" rpa="false" schemaversion="4">
+<suite id="s1" name="Ex002" source="C:\Users\ryanb\dev\learning-robotframework\src\ex002.robot">
+<test id="s1-t1" name="Cenario 1: Preencher formulario" line="26">
+<kw name="Abrir navegador e acessar site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230707 16:55:18.413" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20230707 16:55:18.411" endtime="20230707 16:55:22.676"/>
+</kw>
+<status status="PASS" starttime="20230707 16:55:18.411" endtime="20230707 16:55:22.676"/>
+</kw>
+<kw name="Preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Ryan Gabriel</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:22.685" level="INFO">Typing text 'Ryan Gabriel' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20230707 16:55:22.676" endtime="20230707 16:55:22.918"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>47991579658</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:22.919" level="INFO">Typing text '47991579658' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20230707 16:55:22.918" endtime="20230707 16:55:23.064"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>ryan.exemplo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:23.065" level="INFO">Typing text 'ryan.exemplo@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20230707 16:55:23.064" endtime="20230707 16:55:23.230"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>senha12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:23.231" level="INFO">Typing text 'senha12345' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230707 16:55:23.230" endtime="20230707 16:55:23.367"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>Rua dos bobo numero zero</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:23.368" level="INFO">Typing text 'Rua dos bobo numero zero' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20230707 16:55:23.367" endtime="20230707 16:55:23.576"/>
+</kw>
+<status status="PASS" starttime="20230707 16:55:22.676" endtime="20230707 16:55:23.576"/>
+</kw>
+<kw name="Clicar no Botão">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230707 16:55:23.578" level="INFO">Clicking button 'id:name'.</msg>
+<status status="PASS" starttime="20230707 16:55:23.577" endtime="20230707 16:55:23.666"/>
+</kw>
+<status status="PASS" starttime="20230707 16:55:23.576" endtime="20230707 16:55:23.666"/>
+</kw>
+<status status="PASS" starttime="20230707 16:55:18.410" endtime="20230707 16:55:23.667"/>
+</test>
+<status status="PASS" starttime="20230707 16:55:18.041" endtime="20230707 16:55:23.668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex002">Ex002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
