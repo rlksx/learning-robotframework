@@ -24,6 +24,7 @@ Clicar no Botão
     Click Button     ${input_name}
 *** Test Cases ***
 Cenario 1: Preencher formulario
+    [Tags]    regressivo
     Abrir navegador e acessar site
     Preencher campos
     Clicar no Botão

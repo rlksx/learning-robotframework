@@ -20,6 +20,13 @@ Dentro de um codigo em Robot Framework, você vai notar que contém algumas seç
 - **`Test Cases`**: Nesta seção, você define seus casos de teste, descrevendo a documentação, tags, configuração prévia (se necessário) e as palavras-chave (keywords) que formam o teste em si.
 
 ## Comando para execução do teste
-`robot .src\exemplo.robot`: para executar um teste!
 
-`robot -d results .src/exemplo`: para separar os arquivos resultados para outra pasta!
+`robot .src\exemplo.robot`: executar um teste.
+
+`robot -d results .src/exemplo`: separar os arquivos resultados para outra pasta.
+
+`robot -d results -t "Nome do teste" .src/exemplo.robot`: executar apenas um cenario expecifico.
+
+`robot -d results .src/`: executar todos os arquivos robot de uma pasta.
+
+`robot -d results -i nomedatag .src/`: executar teste especificos de diferentes arquivos (usando tags)
