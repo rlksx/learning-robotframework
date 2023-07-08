@@ -7,9 +7,9 @@ Em resumo, o Robot Framework é uma ferramenta de automação de testes versáti
 Para executar testes automatizados em Robot Framework, é necessário preparar o ambiente. Aqui estão algumas etapas importantes para configurar o ambiente de desenvolvimento:
 
 1. Instale o Python, Certifique-se de ter o [Python](https://www.python.org/downloads/) instalado em sua máquina site oficial
-3. Instale o Robot Framework com o gerenciador de pacotes do Python: `pip install robotframework`
+3. Instale o Robot Framework com o gerenciador de pacotes do Python: *`pip install robotframework`*
 4. Faça download do driver do seu navegador(chromewebdriver para Chrome e gecko para Firefox) e cole o arquivo na pasta de scripts do Python.
-5. Instale o Seleium com o comando `pip install SeleniumLibrary` e verifique que é compativel coma versão do navegador e do driver.
+5. Instale o Seleium com o comando *`pip install SeleniumLibrary`* e verifique que é compativel coma versão do navegador e do driver.
 6. Por último prepare sua IDE com as extenções compativeis com o robotframework.
 
 ## Estrutura do Codigo
@@ -21,12 +21,8 @@ Dentro de um codigo em Robot Framework, você vai notar que contém algumas seç
 
 ## Comando para execução do teste
 
-`robot .src\exemplo.robot`: executar um teste.
-
-`robot -d results .src/exemplo`: separar os arquivos resultados para outra pasta.
-
-`robot -d results -t "Nome do teste" .src/exemplo.robot`: executar apenas um cenario expecifico.
-
-`robot -d results .src/`: executar todos os arquivos robot de uma pasta.
-
-`robot -d results -i nomedatag .src/`: executar teste especificos de diferentes arquivos (usando tags)
+1. Executar apenas um teste: *`robot .src\exemplo.robot`*:
+2. Separar os arquivos resultados para outra pasta: *`robot -d results .src/exemplo`*
+3. Apenas um cenario expecifico: *`robot -d results -t "Nome do teste" .src/exemplo.robot`*
+4. Todos os arquivos robot de uma pasta: *`robot -d results .src/`*
+5. Executar teste especificos de diferentes arquivos (usando tags): *`robot -d results -i nomedatag .src/`*
