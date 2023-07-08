@@ -28,6 +28,7 @@ clica no primeiro video
 video é executado
     Wait Until Element Is Visible    ${button_share}    10
     Element Should Be Visible    ${button_share}
+    Close Browser
 
 *** Test Cases ***
 Given        acesse o site do youtube
